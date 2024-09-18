@@ -36,27 +36,64 @@
         
       <div class="content-table flex-column">
         <div class="flex-row">
-          <div class="flex-item flex-column">
-    <img class="image" id="me" src="images/loq.jpg" style="width: 300px; height: auto;">
-      </div>
 
 
-          <div class="flex-item flex-column">
-            <h2>Loghman Samani</h2>
-             <p class="text">
-              Master’s Student in Technical Biology at <a href="https://www.uni-stuttgart.de" target="_blank">The University of Stuttgart</a><br>
-               Email: st186417@stud.uni-stuttgart.de
-               <br>
-        I have a strong academic foundation in Cell and Molecular Biology, with growing expertise in computational biology and machine learning.
-    </p>
-</div> 
-</div> 
-     <div class="flex-row">
-         <div class="flex-item flex-column">
-           <p class="text">
-             <span class="custom-text-danger">
-            </span>
-           </p>
+
+
+
+
+
+
+
+
+
+          <style>
+  .flex-container {
+      display: flex;
+      align-items: center; /* Align items vertically in the center */
+      gap: 20px; /* Add some space between the image and the description */
+  }
+  
+  .image {
+      width: 300px;
+      height: auto;
+  }
+  
+  .text {
+      font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .flex-container {
+          flex-direction: column; /* For small screens, stack the image and description vertically */
+      }
+  }
+</style>
+
+<div class="flex-container">
+    <div class="flex-item">
+        <img class="image" id="me" src="images/loq.jpg">
+    </div>
+
+    <div class="flex-item">
+        <h2>Loghman Samani</h2>
+        <p class="text">
+            Master’s Student in Technical Biology at 
+            <a href="https://www.uni-stuttgart.de" target="_blank">The University of Stuttgart</a><br>
+            Email: st186417@stud.uni-stuttgart.de
+            <br><br>
+            I have a strong academic foundation in Cell and Molecular Biology, with growing expertise in computational biology and machine learning.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+     
 
 
     <h2>Biography</h2>
