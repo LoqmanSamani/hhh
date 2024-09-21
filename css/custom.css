@@ -1,3 +1,4 @@
+/* Existing styles */
 .content-table>div:first-child>div:first-child>h2:first-child {
   margin-top: 0;
 }
@@ -20,3 +21,70 @@
     flex: 5.5;
   }
 }
+
+/* --- Dark Theme Styling --- */
+
+/* Dark background for the whole page */
+body {
+  background-color: #1c1c1c; /* Dark background */
+  color: #f5f5f5;            /* Light text color */
+}
+
+/* Content containers with a slightly lighter dark color */
+.content-container, .content {
+  background-color: #2b2b2b;  /* Slightly lighter dark background */
+  color: #f5f5f5;             /* Light text for readability */
+}
+
+/* Headers in bright white */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* Link colors */
+a {
+  color: #1e90ff;   /* Bright blue for links */
+}
+
+a:hover {
+  color: #00bfff;   /* Lighter blue on hover */
+}
+
+/* Text inside paragraphs */
+p.text {
+  color: #dcdcdc;   /* Light gray for text in paragraphs */
+}
+
+/* Horizontal lines (hr) with dark styling */
+hr {
+  border-color: #444;  /* Darker gray for horizontal lines */
+}
+
+/* Highlight text in orange for visibility */
+.highlight-text {
+  color: #ffa500;    /* Orange for highlights */
+}
+
+/* Sub-text with a dimmed gray color */
+.sub-text {
+  color: #a9a9a9;    /* Dim gray for subtext */
+}
+
+/* Adjust button or interactive element colors (if any) */
+button, .button-class {
+  background-color: #333;   /* Dark button background */
+  color: #f5f5f5;           /* Light button text */
+  border: none;
+}
+
+button:hover, .button-class:hover {
+  background-color: #555;   /* Slightly lighter on hover */
+}
+
+/* Images (if needed, add any specific styles) */
+img {
+  border-radius: 5px; /* Slightly round the corners */
+}
+
+/* Other sections or elements as needed */
+
