@@ -1,90 +1,176 @@
-/* Existing styles */
-.content-table>div:first-child>div:first-child>h2:first-child {
-  margin-top: 0;
-}
-
-#me {
-  width: 180px;
-  border-radius: 50%;
-}
-
-.flex-item-stretch-6 {
-  flex: 1 auto;
-}
-
-.max-width-600 {
-  max-width: 900px;
-}
-
-@media screen and (min-width: 900px) {
-  .flex-item-stretch-6 {
-    flex: 5.5;
-  }
-}
-
-/* --- Dark Theme Styling --- */
-
-/* Dark background for the whole page */
+/* General Typography Improvements */
 body {
-  background-color: #1c1c1c; /* Dark background */
-  color: #f5f5f5;            /* Light text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  font-size: 16px; /* Standard font size for readability */
+  line-height: 1.6; /* More space between lines for better reading */
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-/* Content containers with a slightly lighter dark color */
-.content-container, .content {
-  background-color: #2b2b2b;  /* Slightly lighter dark background */
-  color: #f5f5f5;             /* Light text for readability */
-}
-
-/* Headers in bright white */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; /* Clean, modern heading font */
   color: #ffffff;
+  margin-bottom: 0.5em;
 }
 
-/* Link colors */
-a {
-  color: #1e90ff;   /* Bright blue for links */
+p, li {
+  color: #dcdcdc; /* Subtle text color */
+  margin-bottom: 1em;
 }
 
-a:hover {
-  color: #00bfff;   /* Lighter blue on hover */
-}
-
-/* Text inside paragraphs */
-p.text {
-  color: #dcdcdc;   /* Light gray for text in paragraphs */
-}
-
-/* Horizontal lines (hr) with dark styling */
-hr {
-  border-color: #444;  /* Darker gray for horizontal lines */
-}
-
-/* Highlight text in orange for visibility */
-.highlight-text {
-  color: #ffa500;    /* Orange for highlights */
-}
-
-/* Sub-text with a dimmed gray color */
-.sub-text {
-  color: #a9a9a9;    /* Dim gray for subtext */
-}
-
-/* Adjust button or interactive element colors (if any) */
+/* Improved Button Styling */
 button, .button-class {
-  background-color: #333;   /* Dark button background */
-  color: #f5f5f5;           /* Light button text */
+  background-color: #333; /* Dark background for buttons */
+  color: #f5f5f5;
+  padding: 10px 20px; /* Comfortable padding */
+  border-radius: 5px; /* Rounded corners */
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover, .button-class:hover {
-  background-color: #555;   /* Slightly lighter on hover */
+  background-color: #555;
+  transform: scale(1.05); /* Slight grow on hover */
 }
 
-/* Images (if needed, add any specific styles) */
+/* Card-style Design for Content Blocks */
+.content-container {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px;
+}
+
 img {
-  border-radius: 5px; /* Slightly round the corners */
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Other sections or elements as needed */
+/* Links with Hover Effects */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff; /* Underline on hover */
+}
+
+/* Enhanced List Styling */
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  color: #e0e0e0;
+}
+
+/* Subtle HR Styling */
+hr {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 20px 0;
+}
+
+/* Improved Input Fields (for forms if applicable) */
+input[type="text"], input[type="email"], textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #f5f5f5;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
+
+/* Custom Scrollbar Styling (Optional for a sleek look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2b2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
+/* Transition for smooth hover animations */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Flexbox Grid for Layout (if used) */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 300px;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+  .flex-item-stretch-6 {
+    flex: 1;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .content-container, .flex-item {
+    margin-bottom: 15px;
+  }
+}
+
+/* Optional: Footer Styling for a more complete look */
+footer {
+  background-color: #1c1c1c;
+  color: #a9a9a9;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #1e90ff;
+}
+
+footer a:hover {
+  color: #00bfff;
+}
+
 
