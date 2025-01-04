@@ -130,13 +130,14 @@
     <br>
     
     <p class="text">
-        Gene Regulatory Networks (GRNs) play a crucial role in understanding how genes interact and regulate biological processes. Traditional methods for modeling GRNs often simplify the initial conditions, assuming uniform gene distributions, which limits their accuracy. My work focuses on addressing this gap by introducing an approach that considers diverse spatial conditions for simulating gene activity in two-dimensional environments.
-    </p>
+        As part of my master’s thesis at the <a href="https://www.uni-stuttgart.de/en/" target="_blank">University of Stuttgart</a>, I developed the GRN-Designer algorithm—a powerful tool for designing Gene Regulatory Networks (GRNs). GRNs are like blueprints that help us understand how genes interact and control each other in living systems. They play a key role in studying biological systems, but traditional GRN models often assume that genes are evenly spread across space, which isn’t always realistic.
 
-    <p class="text">
-        As part of my master’s thesis at the <a href="https://www.uni-stuttgart.de/en/" target="_blank">University of Stuttgart</a>, I developed the GRN-Designer algorithm. This is a hybrid optimization framework combining evolutionary algorithms and gradient-based methods to design GRNs capable of replicating predefined spatial patterns. The algorithm optimizes both the initial gene expression levels and the spatial activation potential to achieve target patterns. Each design was tested using partial differential equations (PDEs) to model the dynamics of gene expression accurately.
-    </p>
+       The GRN-Designer algorithm is a hybrid optimization framework that combines evolutionary algorithms (which mimic natural selection) with gradient-based methods (a fine-tuning process). This allows it to design GRNs that can recreate predefined spatial patterns. What makes this approach unique is its ability to optimize both the initial gene expression levels and the spatial activation potential of genes, simulating how gene activity spreads in a two-dimensional space.
 
+       To test the designs, I used partial differential equations (PDEs) to accurately model the dynamics of gene expression. The algorithm successfully created GRNs for a variety of patterns, from simple gradients to intricate shapes. It also adjusted the complexity of each GRN, using just the right number of genes and interactions to match the complexity of the target pattern.
+
+      This work opens new possibilities in synthetic biology and tissue engineering, where creating specific spatial patterns is essential. Future improvements could extend the framework to three-dimensional environments, add randomness to better reflect real-life biology, and tackle even more complex systems.
+      <\p>
     <p class="text">
         Explore more about the project on <a href="https://github.com/LoqmanSamani/grn-designer" target="_blank"><strong>GitHub</strong></a>.
       </div>
