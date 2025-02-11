@@ -59,10 +59,10 @@ body {
 
 /* ===== IMAGE STYLING ===== */
 .custom-image {
-  width: 400px;  /* Set a fixed width */
+  width: 50px;  /* Set a fixed width */
   height: auto;  /* Maintain aspect ratio */
   display: block;
-  margin: 20px auto;  /* Center images with spacing */
+  margin: 10px auto;  /* Center images with spacing */
   border-radius: 10px;  /* Optional: Add rounded corners */
 }
 
