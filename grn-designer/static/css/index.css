@@ -59,7 +59,7 @@ body {
 
 /* ===== IMAGE STYLING ===== */
 .custom-image {
-  width: 200px;  /* Set a fixed width */
+  width: 300px;  /* Set a fixed width */
   height: auto;  /* Maintain aspect ratio */
   display: block;
   margin: 10px auto;  /* Center images with spacing */
