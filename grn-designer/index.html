@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Automated Design and Analysis of Gene Regulatory Networks (GRNs)">
+  <meta name="keywords" content="grn-designer, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>GRN-Designer Algorithm</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -258,31 +258,33 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Gene Regulatory Networks (GRNs) are essential frameworks for understanding complex gene interactions and regulatory mechanisms in biological systems.
+            Traditional GRN modeling approaches often rely on deterministic or probabilistic frameworks to simulate gene expression dynamics, but they typically
+            overlook the critical role of spatially heterogeneous initial conditions. Synthetic developmental biology has focused on constructing GRNs
+            to replicate specific spatial patterns, yet most models assume simplified, uniform distributions of gene products, limiting biological realism.
+            This work addresses this limitation by introducing an approach that incorporates variable initial conditions, simulating diverse spatial distributions
+            of gene activity in a two-dimensional environment.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We developed the GRN-Designer algorithm, an end-to-end hybrid optimization framework that combines evolutionary algorithms
+            with gradient-based methods to construct GRNs capable of replicating predefined spatial patterns.
+            By treating the initial expression levels and spatial activation potential of genes as adjustable parameters,
+            the algorithm designs GRN structure and optimizes regulatory parameters to achieve target diffusion patterns.
+            Multiple distinct spatial patterns were tested, each simulated through partial differential equations (PDEs)
+            to model gene expression dynamics.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The algorithm successfully designed GRNs for all target patterns, ranging from simple gradients to intricate shapes,
+            demonstrating flexibility in managing diverse spatial configurations. The constructed GRNs adaptively balanced complexity,
+            tailoring the number of genes and regulatory interactions to match the intricacies of each target pattern.
+            Results indicate that our approach effectively combines computational efficiency with biological realism,
+            producing spatial patterns that closely resemble their intended designs.
+          </p>
+          <p>
+            This work establishes a robust framework for GRN design, with promising applications in synthetic biology and tissue engineering.
+            By integrating heterogeneous spatial initial conditions, our model advances the realism of GRN simulations. Future enhancements may
+            explore stochastic simulation techniques to account for biological variability, extend the framework to three-dimensional environments,
+            and improve optimization performance to address more complex biological systems.
           </p>
         </div>
       </div>
